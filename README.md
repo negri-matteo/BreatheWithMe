@@ -2,13 +2,15 @@
 
 App per iPhone e Apple Watch per esercizi di respirazione guidata e allenamento dell'apnea statica a secco, con battito cardiaco in tempo reale da Apple Watch.
 
-<!-- Aggiungi qui alcuni screenshot, ad esempio:
 <p align="center">
-  <img src="docs/respira.png" width="230">
-  <img src="docs/apnea.png" width="230">
-  <img src="docs/storico.png" width="230">
+  <img src="docs/Respira.png" width="230">
+  <img src="docs/Timer.png" width="230">
+  <img src="docs/Nuovo_Timer.png" width="230">
+  <img src="docs/Apnea.png" width="230">
+  <img src="docs/Recupero.png" width="230">
+  <img src="docs/Storico.png" width="230">
+  <img src="docs/Sessione.png" width="230">
 </p>
--->
 
 > [!WARNING]
 > **Mai in acqua, mai da soli.** Trattenere il respiro può far perdere conoscenza senza preavviso. L'app è pensata solo per allenamenti a secco, da seduti o sdraiati, con qualcuno vicino. Non è un dispositivo medico: i valori di battito e ossigenazione hanno solo finalità di benessere personale.
