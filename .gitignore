@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Xcode: dati personali e build
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcresult

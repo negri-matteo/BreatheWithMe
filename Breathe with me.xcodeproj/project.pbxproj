@@ -1,0 +1,1039 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		952DDBEC30A5304600484084 /* BWM Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 952DDBCE30A5304400484084 /* BWM Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		952DDBDB30A5304600484084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9537D5DA2E21AF830090A364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952DDBCD30A5304400484084;
+			remoteInfo = "BWM Watch App";
+		};
+		952DDBE530A5304600484084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9537D5DA2E21AF830090A364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952DDBCD30A5304400484084;
+			remoteInfo = "BWM Watch App";
+		};
+		952DDBEA30A5304600484084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9537D5DA2E21AF830090A364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952DDBCD30A5304400484084;
+			remoteInfo = "BWM Watch App";
+		};
+		9537D5F12E21AF850090A364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9537D5DA2E21AF830090A364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9537D5E12E21AF830090A364;
+			remoteInfo = "Breathe with me";
+		};
+		9537D5FB2E21AF850090A364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9537D5DA2E21AF830090A364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9537D5E12E21AF830090A364;
+			remoteInfo = "Breathe with me";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		952DDBB530A5251600484084 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				952DDBEC30A5304600484084 /* BWM Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		952DDBCE30A5304400484084 /* BWM Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BWM Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952DDBDA30A5304600484084 /* BWM Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BWM Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952DDBE430A5304600484084 /* BWM Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BWM Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952DDBF930A5311700484084 /* BWM-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BWM-Watch-App-Info.plist"; sourceTree = "<group>"; };
+		9537D5E22E21AF830090A364 /* Breathe with me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breathe with me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9537D5F02E21AF850090A364 /* Breathe with meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breathe with meTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9537D5FA2E21AF850090A364 /* Breathe with meUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breathe with meUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		958F12B430A5221000BE4084 /* Breathe-with-me-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Breathe-with-me-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		952DDBCF30A5304400484084 /* BWM Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BWM Watch App";
+			sourceTree = "<group>";
+		};
+		952DDBDD30A5304600484084 /* BWM Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BWM Watch AppTests";
+			sourceTree = "<group>";
+		};
+		952DDBE730A5304600484084 /* BWM Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BWM Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		9537D5E42E21AF830090A364 /* Breathe with me */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Breathe with me";
+			sourceTree = "<group>";
+		};
+		9537D5F32E21AF850090A364 /* Breathe with meTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Breathe with meTests";
+			sourceTree = "<group>";
+		};
+		9537D5FD2E21AF850090A364 /* Breathe with meUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Breathe with meUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952DDBCB30A5304400484084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952DDBD730A5304600484084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952DDBE130A5304600484084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5DF2E21AF830090A364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5ED2E21AF850090A364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5F72E21AF850090A364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9537D5D92E21AF830090A364 = {
+			isa = PBXGroup;
+			children = (
+				952DDBF930A5311700484084 /* BWM-Watch-App-Info.plist */,
+				958F12B430A5221000BE4084 /* Breathe-with-me-Info.plist */,
+				9537D5E42E21AF830090A364 /* Breathe with me */,
+				9537D5F32E21AF850090A364 /* Breathe with meTests */,
+				9537D5FD2E21AF850090A364 /* Breathe with meUITests */,
+				952DDBCF30A5304400484084 /* BWM Watch App */,
+				952DDBDD30A5304600484084 /* BWM Watch AppTests */,
+				952DDBE730A5304600484084 /* BWM Watch AppUITests */,
+				9537D5E32E21AF830090A364 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9537D5E32E21AF830090A364 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9537D5E22E21AF830090A364 /* Breathe with me.app */,
+				9537D5F02E21AF850090A364 /* Breathe with meTests.xctest */,
+				9537D5FA2E21AF850090A364 /* Breathe with meUITests.xctest */,
+				952DDBCE30A5304400484084 /* BWM Watch App.app */,
+				952DDBDA30A5304600484084 /* BWM Watch AppTests.xctest */,
+				952DDBE430A5304600484084 /* BWM Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		952DDBCD30A5304400484084 /* BWM Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952DDBED30A5304600484084 /* Build configuration list for PBXNativeTarget "BWM Watch App" */;
+			buildPhases = (
+				952DDBCA30A5304400484084 /* Sources */,
+				952DDBCB30A5304400484084 /* Frameworks */,
+				952DDBCC30A5304400484084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				952DDBCF30A5304400484084 /* BWM Watch App */,
+			);
+			name = "BWM Watch App";
+			packageProductDependencies = (
+			);
+			productName = "BWM Watch App";
+			productReference = 952DDBCE30A5304400484084 /* BWM Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		952DDBD930A5304600484084 /* BWM Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952DDBF030A5304600484084 /* Build configuration list for PBXNativeTarget "BWM Watch AppTests" */;
+			buildPhases = (
+				952DDBD630A5304600484084 /* Sources */,
+				952DDBD730A5304600484084 /* Frameworks */,
+				952DDBD830A5304600484084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952DDBDC30A5304600484084 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				952DDBDD30A5304600484084 /* BWM Watch AppTests */,
+			);
+			name = "BWM Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "BWM Watch AppTests";
+			productReference = 952DDBDA30A5304600484084 /* BWM Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		952DDBE330A5304600484084 /* BWM Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952DDBF330A5304600484084 /* Build configuration list for PBXNativeTarget "BWM Watch AppUITests" */;
+			buildPhases = (
+				952DDBE030A5304600484084 /* Sources */,
+				952DDBE130A5304600484084 /* Frameworks */,
+				952DDBE230A5304600484084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952DDBE630A5304600484084 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				952DDBE730A5304600484084 /* BWM Watch AppUITests */,
+			);
+			name = "BWM Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "BWM Watch AppUITests";
+			productReference = 952DDBE430A5304600484084 /* BWM Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9537D5E12E21AF830090A364 /* Breathe with me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9537D6042E21AF850090A364 /* Build configuration list for PBXNativeTarget "Breathe with me" */;
+			buildPhases = (
+				9537D5DE2E21AF830090A364 /* Sources */,
+				9537D5DF2E21AF830090A364 /* Frameworks */,
+				9537D5E02E21AF830090A364 /* Resources */,
+				952DDBB530A5251600484084 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952DDBEB30A5304600484084 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9537D5E42E21AF830090A364 /* Breathe with me */,
+			);
+			name = "Breathe with me";
+			packageProductDependencies = (
+			);
+			productName = "Breathe with me";
+			productReference = 9537D5E22E21AF830090A364 /* Breathe with me.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9537D5EF2E21AF850090A364 /* Breathe with meTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9537D6072E21AF850090A364 /* Build configuration list for PBXNativeTarget "Breathe with meTests" */;
+			buildPhases = (
+				9537D5EC2E21AF850090A364 /* Sources */,
+				9537D5ED2E21AF850090A364 /* Frameworks */,
+				9537D5EE2E21AF850090A364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9537D5F22E21AF850090A364 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9537D5F32E21AF850090A364 /* Breathe with meTests */,
+			);
+			name = "Breathe with meTests";
+			packageProductDependencies = (
+			);
+			productName = "Breathe with meTests";
+			productReference = 9537D5F02E21AF850090A364 /* Breathe with meTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9537D5F92E21AF850090A364 /* Breathe with meUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9537D60A2E21AF850090A364 /* Build configuration list for PBXNativeTarget "Breathe with meUITests" */;
+			buildPhases = (
+				9537D5F62E21AF850090A364 /* Sources */,
+				9537D5F72E21AF850090A364 /* Frameworks */,
+				9537D5F82E21AF850090A364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9537D5FC2E21AF850090A364 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9537D5FD2E21AF850090A364 /* Breathe with meUITests */,
+			);
+			name = "Breathe with meUITests";
+			packageProductDependencies = (
+			);
+			productName = "Breathe with meUITests";
+			productReference = 9537D5FA2E21AF850090A364 /* Breathe with meUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9537D5DA2E21AF830090A364 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2720;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					952DDBCD30A5304400484084 = {
+						CreatedOnToolsVersion = 27.2;
+					};
+					952DDBD930A5304600484084 = {
+						CreatedOnToolsVersion = 27.2;
+						TestTargetID = 952DDBCD30A5304400484084;
+					};
+					952DDBE330A5304600484084 = {
+						CreatedOnToolsVersion = 27.2;
+						TestTargetID = 952DDBCD30A5304400484084;
+					};
+					9537D5E12E21AF830090A364 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					9537D5EF2E21AF850090A364 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9537D5E12E21AF830090A364;
+					};
+					9537D5F92E21AF850090A364 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9537D5E12E21AF830090A364;
+					};
+				};
+			};
+			buildConfigurationList = 9537D5DD2E21AF830090A364 /* Build configuration list for PBXProject "Breathe with me" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9537D5D92E21AF830090A364;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9537D5E32E21AF830090A364 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9537D5E12E21AF830090A364 /* Breathe with me */,
+				9537D5EF2E21AF850090A364 /* Breathe with meTests */,
+				9537D5F92E21AF850090A364 /* Breathe with meUITests */,
+				952DDBCD30A5304400484084 /* BWM Watch App */,
+				952DDBD930A5304600484084 /* BWM Watch AppTests */,
+				952DDBE330A5304600484084 /* BWM Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952DDBCC30A5304400484084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952DDBD830A5304600484084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952DDBE230A5304600484084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5E02E21AF830090A364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5EE2E21AF850090A364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5F82E21AF850090A364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		952DDBCA30A5304400484084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952DDBD630A5304600484084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952DDBE030A5304600484084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5DE2E21AF830090A364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5EC2E21AF850090A364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537D5F62E21AF850090A364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		952DDBDC30A5304600484084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952DDBCD30A5304400484084 /* BWM Watch App */;
+			targetProxy = 952DDBDB30A5304600484084 /* PBXContainerItemProxy */;
+		};
+		952DDBE630A5304600484084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952DDBCD30A5304400484084 /* BWM Watch App */;
+			targetProxy = 952DDBE530A5304600484084 /* PBXContainerItemProxy */;
+		};
+		952DDBEB30A5304600484084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952DDBCD30A5304400484084 /* BWM Watch App */;
+			targetProxy = 952DDBEA30A5304600484084 /* PBXContainerItemProxy */;
+		};
+		9537D5F22E21AF850090A364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9537D5E12E21AF830090A364 /* Breathe with me */;
+			targetProxy = 9537D5F12E21AF850090A364 /* PBXContainerItemProxy */;
+		};
+		9537D5FC2E21AF850090A364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9537D5E12E21AF830090A364 /* Breathe with me */;
+			targetProxy = 9537D5FB2E21AF850090A364 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		952DDBEE30A5304600484084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BWM Watch App/BWM Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BWM-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BWM;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "matteo-negri.Breathe-with-me";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-me.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		952DDBEF30A5304600484084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BWM Watch App/BWM Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BWM-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BWM;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "matteo-negri.Breathe-with-me";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-me.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		952DDBF130A5304600484084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.BWM-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWM Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BWM Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		952DDBF230A5304600484084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.BWM-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWM Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BWM Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		952DDBF430A5304600484084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.BWM-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BWM Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		952DDBF530A5304600484084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.BWM-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BWM Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		9537D6022E21AF850090A364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9537D6032E21AF850090A364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9537D6052E21AF850090A364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Breathe with me/Breathe_with_me.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Breathe-with-me-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		9537D6062E21AF850090A364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Breathe with me/Breathe_with_me.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Breathe-with-me-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Serve a registrare battito e ossigenazione durante gli esercizi di apnea";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		9537D6082E21AF850090A364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-meTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breathe with me.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Breathe with me";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		9537D6092E21AF850090A364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-meTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breathe with me.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Breathe with me";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		9537D60B2E21AF850090A364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-meUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = "Breathe with me";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		9537D60C2E21AF850090A364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = QK3HUKJPGB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matteo-negri.Breathe-with-meUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = "Breathe with me";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		952DDBED30A5304600484084 /* Build configuration list for PBXNativeTarget "BWM Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952DDBEE30A5304600484084 /* Debug */,
+				952DDBEF30A5304600484084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952DDBF030A5304600484084 /* Build configuration list for PBXNativeTarget "BWM Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952DDBF130A5304600484084 /* Debug */,
+				952DDBF230A5304600484084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952DDBF330A5304600484084 /* Build configuration list for PBXNativeTarget "BWM Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952DDBF430A5304600484084 /* Debug */,
+				952DDBF530A5304600484084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9537D5DD2E21AF830090A364 /* Build configuration list for PBXProject "Breathe with me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537D6022E21AF850090A364 /* Debug */,
+				9537D6032E21AF850090A364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9537D6042E21AF850090A364 /* Build configuration list for PBXNativeTarget "Breathe with me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537D6052E21AF850090A364 /* Debug */,
+				9537D6062E21AF850090A364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9537D6072E21AF850090A364 /* Build configuration list for PBXNativeTarget "Breathe with meTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537D6082E21AF850090A364 /* Debug */,
+				9537D6092E21AF850090A364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9537D60A2E21AF850090A364 /* Build configuration list for PBXNativeTarget "Breathe with meUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537D60B2E21AF850090A364 /* Debug */,
+				9537D60C2E21AF850090A364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9537D5DA2E21AF830090A364 /* Project object */;
+}
