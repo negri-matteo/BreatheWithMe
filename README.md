@@ -87,7 +87,8 @@ BWM Watch App/              App Apple Watch
 
 ## Autore
 
-Sviluppata da **Matteo Negri**. Per segnalazioni e suggerimenti apri una [issue](../../issues) oppure scrivi a [silentmat@proton.me](mailto:silentmat@proton.me).
+Sviluppata da **Matteo Negri**. Per segnalazioni e suggerimenti scrivi a [silentmat@proton.me](mailto:silentmat@proton.me).
 
-<!-- ## Licenza
-Scegli una licenza (ad esempio MIT) e aggiungi il file LICENSE al repository. -->
+## Licenza
+
+Distribuito con licenza MIT. Vedi il file [LICENSE](LICENSE).
