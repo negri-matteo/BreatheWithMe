@@ -6,10 +6,10 @@ enum AppInfo {
     static let developer = "Matteo Negri"
     static let supportEmail = "silentmat@proton.me"
 
-    // Pagine pubblicate con GitHub Pages dalla cartella docs del repository negri-matteo/BreatheWithMe.
+    // Pagine pubblicate con GitHub Pages dalla cartella docs del repository negri-matteo/LetsBreathe.
     // Devono restare pubbliche: App Store Connect chiede l'URL della privacy policy.
-    static let privacyURLString = "https://negri-matteo.github.io/BreatheWithMe/privacy"
-    static let termsURLString = "https://negri-matteo.github.io/BreatheWithMe/termini"
+    static let privacyURLString = "https://negri-matteo.github.io/LetsBreathe/privacy"
+    static let termsURLString = "https://negri-matteo.github.io/LetsBreathe/termini"
 
     /// Se cambi il testo dell'avviso di sicurezza, aumenta questo numero:
     /// il consenso verrà richiesto di nuovo a tutti.
