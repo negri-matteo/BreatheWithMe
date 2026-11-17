@@ -1,13 +1,13 @@
 //
-//  Breathe_with_meUITests.swift
-//  Breathe with meUITests
+//  LetsBreathe_Watch_AppUITests.swift
+//  LetsBreathe Watch AppUITests
 //
-//  Created by Matteo Negri on 11/07/25.
+//  Created by Matteo Negri on 12/11/2026.
 //
 
 import XCTest
 
-final class Breathe_with_meUITests: XCTestCase {
+final class LetsBreathe_Watch_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -29,6 +29,8 @@ final class Breathe_with_meUITests: XCTestCase {
         app.launch()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // XCUIAutomation Documentation
+        // https://developer.apple.com/documentation/xcuiautomation
     }
 
     @MainActor

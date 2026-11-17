@@ -15,22 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "952DDBCD30A5304400484084"
-               BuildableName = "BWM Watch App.app"
-               ReferencedContainer = "container:Breathe with me.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "9537D5E12E21AF830090A364"
-               BuildableName = "Breathe with me.app"
-               ReferencedContainer = "container:Breathe with me.xcodeproj">
+               BuildableName = "LetsBreathe.app"
+               ReferencedContainer = "container:LetsBreathe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +34,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "952DDBD930A5304600484084"
-               BuildableName = "BWM Watch AppTests.xctest"
-               ReferencedContainer = "container:Breathe with me.xcodeproj">
+               BlueprintIdentifier = "9537D5EF2E21AF850090A364"
+               BuildableName = "LetsBreatheTests.xctest"
+               ReferencedContainer = "container:LetsBreathe.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -57,9 +44,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "952DDBE330A5304600484084"
-               BuildableName = "BWM Watch AppUITests.xctest"
-               ReferencedContainer = "container:Breathe with me.xcodeproj">
+               BlueprintIdentifier = "9537D5F92E21AF850090A364"
+               BuildableName = "LetsBreatheUITests.xctest"
+               ReferencedContainer = "container:LetsBreathe.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -79,9 +66,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "952DDBCD30A5304400484084"
-            BuildableName = "BWM Watch App.app"
-            ReferencedContainer = "container:Breathe with me.xcodeproj">
+            BlueprintIdentifier = "9537D5E12E21AF830090A364"
+            BuildableName = "LetsBreathe.app"
+            ReferencedContainer = "container:LetsBreathe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -95,9 +82,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "952DDBCD30A5304400484084"
-            BuildableName = "BWM Watch App.app"
-            ReferencedContainer = "container:Breathe with me.xcodeproj">
+            BlueprintIdentifier = "9537D5E12E21AF830090A364"
+            BuildableName = "LetsBreathe.app"
+            ReferencedContainer = "container:LetsBreathe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

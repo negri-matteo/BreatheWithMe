@@ -1,13 +1,13 @@
 //
-//  BWM_Watch_AppUITests.swift
-//  BWM Watch AppUITests
+//  LetsBreatheUITests.swift
+//  LetsBreatheUITests
 //
-//  Created by Matteo Negri on 12/11/2026.
+//  Created by Matteo Negri on 11/07/25.
 //
 
 import XCTest
 
-final class BWM_Watch_AppUITests: XCTestCase {
+final class LetsBreatheUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -29,8 +29,6 @@ final class BWM_Watch_AppUITests: XCTestCase {
         app.launch()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // XCUIAutomation Documentation
-        // https://developer.apple.com/documentation/xcuiautomation
     }
 
     @MainActor

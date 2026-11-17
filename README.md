@@ -63,19 +63,19 @@ Il battito in tempo reale richiede un Apple Watch abbinato. La SpO₂ richiede u
 
 ## Compilare il progetto
 
-1. Clona il repository e apri `Breathe with me.xcodeproj` in Xcode. Il progetto e i target mantengono il nome originale *Breathe with me* (e *BWM* per il Watch); sul telefono e sull'orologio l'app si chiama **Let's Breathe**.
-2. In **Signing & Capabilities** imposta il tuo team per i target **Breathe with me** e **BWM Watch App**. Se cambi il bundle identifier dell'app iPhone, aggiorna anche:
+1. Clona il repository e apri `LetsBreathe.xcodeproj` in Xcode.
+2. In **Signing & Capabilities** imposta il tuo team per i target **LetsBreathe** e **LetsBreathe Watch App**. Se cambi il bundle identifier dell'app iPhone, aggiorna anche:
    - il bundle identifier dell'app Watch, che deve iniziare con quello dell'iPhone (es. `tuo.id.app.watchkitapp`);
    - `WKCompanionAppBundleIdentifier` nelle impostazioni di build del target Watch.
 3. Entrambi i target usano la capability **HealthKit**.
-4. Avvia lo schema **Breathe with me** su iPhone. L'app Watch è incorporata nell'app iPhone e si installa insieme a lei.
+4. Avvia lo schema **LetsBreathe** su iPhone. L'app Watch è incorporata nell'app iPhone e si installa insieme a lei.
 
-Per installare l'app direttamente sul Watch usa lo schema **BWM Watch App** con l'orologio come destinazione. La prima volta Xcode registra il Watch nel tuo account sviluppatore: deve essere sbloccato, con la Modalità sviluppatore attiva.
+Per installare l'app direttamente sul Watch usa lo schema **LetsBreathe Watch App** con l'orologio come destinazione. La prima volta Xcode registra il Watch nel tuo account sviluppatore: deve essere sbloccato, con la Modalità sviluppatore attiva.
 
 ## Struttura
 
 ```
-Breathe with me/            App iPhone
+LetsBreathe/                App iPhone
   ContentView.swift           Schede, splash e consenso iniziale
   BreathingScreen.swift       Timer di respirazione, profili, audio e aptica
   ApneaScreen.swift           Cronometro di apnea
@@ -84,7 +84,7 @@ Breathe with me/            App iPhone
   VitalsMonitor.swift         Collegamento con Apple Watch e lettura da Salute
   AboutScreen.swift           Informazioni, avvertenze e testi legali
   Localization.swift          Lingua dell'app (italiano / inglese)
-BWM Watch App/              App Apple Watch
+LetsBreathe Watch App/      App Apple Watch
   WatchApp.swift              Sessione di allenamento e invio del battito
 ```
 

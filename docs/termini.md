@@ -46,7 +46,7 @@ Nei limiti massimi consentiti dalla legge applicabile, lo Sviluppatore non è re
 
 ## 9. Privacy
 
-Il trattamento dei dati è descritto nell'Informativa sulla privacy, disponibile all'interno dell'App e a questo indirizzo: https://silentmat.github.io/breathe-with-me/privacy
+Il trattamento dei dati è descritto nell'Informativa sulla privacy, disponibile all'interno dell'App e a questo indirizzo: https://negri-matteo.github.io/LetsBreathe/privacy
 
 ## 10. Modifiche e aggiornamenti
 
@@ -110,7 +110,7 @@ To the maximum extent permitted by applicable law, the Developer is not liable f
 
 ## 9. Privacy
 
-Data processing is described in the Privacy Policy, available within the App and at: https://silentmat.github.io/breathe-with-me/privacy
+Data processing is described in the Privacy Policy, available within the App and at: https://negri-matteo.github.io/LetsBreathe/privacy
 
 ## 10. Changes and updates
 

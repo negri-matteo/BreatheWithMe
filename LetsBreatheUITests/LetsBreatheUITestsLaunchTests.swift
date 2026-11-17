@@ -1,13 +1,13 @@
 //
-//  Breathe_with_meUITestsLaunchTests.swift
-//  Breathe with meUITests
+//  LetsBreatheUITestsLaunchTests.swift
+//  LetsBreatheUITests
 //
 //  Created by Matteo Negri on 11/07/25.
 //
 
 import XCTest
 
-final class Breathe_with_meUITestsLaunchTests: XCTestCase {
+final class LetsBreatheUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
