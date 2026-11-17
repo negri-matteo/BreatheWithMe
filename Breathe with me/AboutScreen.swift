@@ -19,7 +19,7 @@ enum AppInfo {
     static var name: String {
         (Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String)
             ?? (Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String)
-            ?? "Breathe with me"
+            ?? "Let's Breathe"
     }
 
     static var version: String {
@@ -246,10 +246,14 @@ struct AboutScreen: View {
             List {
                 Section {
                     VStack(spacing: 10) {
-                        BrandImage(asset: .horizontal)
-                            .frame(maxWidth: 270)
-                            .padding(.bottom, 4)
-                            .accessibilityLabel(AppInfo.name)
+                        HStack(spacing: 12) {
+                            BrandImage(asset: .mark)
+                                .frame(height: 56)
+                            BrandWordmark(size: 28)
+                        }
+                        .padding(.bottom, 4)
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(AppInfo.name)
                         Text(AppInfo.version)
                             .font(.footnote)
                             .foregroundStyle(.white.opacity(0.65))

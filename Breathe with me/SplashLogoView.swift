@@ -26,7 +26,7 @@ struct SplashLogoView: View {
         }
         .frame(width: size, height: size)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("Breathe with me")
+        .accessibilityLabel("Let's Breathe")
         .onAppear {
             guard !risen else { return }
             if reduceMotion {
@@ -173,13 +173,7 @@ struct SplashScreen: View {
             Brand.navy.ignoresSafeArea()
             VStack(spacing: 32) {
                 SplashLogoView(onFinished: onFinished)
-                (Text("breathe ")
-                    .fontWeight(.medium)
-                    .foregroundStyle(Brand.white)
-                    + Text("with me")
-                    .fontWeight(.light)
-                    .foregroundStyle(Brand.arcInner))
-                    .font(.system(size: 38, design: .rounded))
+                BrandWordmark(size: 38)
             }
         }
     }

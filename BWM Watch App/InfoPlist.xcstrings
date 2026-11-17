@@ -1,57 +1,74 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "NSHealthShareUsageDescription": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Used to read the heart rate and blood oxygen recorded by Apple Watch during breath-hold sessions."
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's Breathe"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Serve a leggere il battito cardiaco e l'ossigenazione registrati da Apple Watch durante gli esercizi di apnea."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's Breathe"
           }
         }
       }
     },
-    "NSHealthUpdateUsageDescription": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Used to start a temporary workout on Apple Watch to measure your heart rate. The workout is discarded and never saved to Health."
+    "CFBundleName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's Breathe"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Serve ad avviare su Apple Watch un allenamento temporaneo per misurare il battito. L'allenamento viene scartato e non viene salvato in Salute."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's Breathe"
           }
         }
       }
     },
-    "CFBundleDisplayName": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "BWM"
+    "NSHealthShareUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Used to read the heart rate and blood oxygen recorded by Apple Watch during breath-hold sessions."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "BWM"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve a leggere il battito cardiaco e l'ossigenazione registrati da Apple Watch durante gli esercizi di apnea."
+          }
+        }
+      }
+    },
+    "NSHealthUpdateUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Used to start a temporary workout on Apple Watch to measure your heart rate. The workout is discarded and never saved to Health."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve ad avviare su Apple Watch un allenamento temporaneo per misurare il battito. L'allenamento viene scartato e non viene salvato in Salute."
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

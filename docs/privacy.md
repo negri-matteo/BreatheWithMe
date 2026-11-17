@@ -1,10 +1,10 @@
-# Informativa sulla privacy – Breathe with me
+# Informativa sulla privacy – Let's Breathe
 
 Ultimo aggiornamento: 12 novembre 2026
 
 ## In breve
 
-Breathe with me non raccoglie dati personali. Tutto ciò che l'app registra resta sul tuo dispositivo. Lo sviluppatore non ha server, non riceve i tuoi dati e non può vederli.
+Let's Breathe non raccoglie dati personali. Tutto ciò che l'app registra resta sul tuo dispositivo. Lo sviluppatore non ha server, non riceve i tuoi dati e non può vederli.
 
 ## Titolare del trattamento
 
@@ -65,13 +65,13 @@ Se questa informativa cambia, la nuova versione viene pubblicata a questo indiri
 
 ---
 
-# Privacy Policy – Breathe with me
+# Privacy Policy – Let's Breathe
 
 Last updated: November 12, 2026
 
 ## Summary
 
-Breathe with me does not collect personal data. Everything the app records stays on your device. The developer has no servers, does not receive your data and cannot see it.
+Let's Breathe does not collect personal data. Everything the app records stays on your device. The developer has no servers, does not receive your data and cannot see it.
 
 ## Data controller
 

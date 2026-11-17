@@ -1,4 +1,4 @@
-# Breathe with me
+# Let's Breathe
 
 App per iPhone e Apple Watch per esercizi di respirazione guidata e allenamento dell'apnea statica a secco, con battito cardiaco in tempo reale da Apple Watch.
 
@@ -63,7 +63,7 @@ Il battito in tempo reale richiede un Apple Watch abbinato. La SpO₂ richiede u
 
 ## Compilare il progetto
 
-1. Clona il repository e apri `Breathe with me.xcodeproj` in Xcode.
+1. Clona il repository e apri `Breathe with me.xcodeproj` in Xcode. Il progetto e i target mantengono il nome originale *Breathe with me* (e *BWM* per il Watch); sul telefono e sull'orologio l'app si chiama **Let's Breathe**.
 2. In **Signing & Capabilities** imposta il tuo team per i target **Breathe with me** e **BWM Watch App**. Se cambi il bundle identifier dell'app iPhone, aggiorna anche:
    - il bundle identifier dell'app Watch, che deve iniziare con quello dell'iPhone (es. `tuo.id.app.watchkitapp`);
    - `WKCompanionAppBundleIdentifier` nelle impostazioni di build del target Watch.

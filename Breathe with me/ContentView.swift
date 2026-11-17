@@ -82,9 +82,7 @@ struct ContentView: View {
 
 /// Immagini del marchio nel catalogo Assets dell'app.
 enum BrandAsset: String {
-    case logo = "BrandLogo"               // verticale: archi, figura, bolle e scritta
-    case mark = "BrandMark"               // archi, figura e bolle
-    case horizontal = "BrandHorizontal"   // archi e figura a sinistra, scritta a destra
+    case mark = "BrandMark"               // archi, figura e bolle (senza scritta)
 
     var isAvailable: Bool {
         #if canImport(UIKit)
@@ -92,6 +90,26 @@ enum BrandAsset: String {
         #else
         return true
         #endif
+    }
+}
+
+/// Scritta del marchio, "let's" chiaro e "breathe" acqua.
+/// Disegnata come testo: segue il nome dell'app senza bisogno di nuove immagini.
+struct BrandWordmark: View {
+    var size: CGFloat = 32
+
+    private let white = Color(red: 0xF2 / 255, green: 0xF7 / 255, blue: 0xF6 / 255)
+    private let aqua = Color(red: 0x8F / 255, green: 0xD6 / 255, blue: 0xD1 / 255)
+
+    var body: some View {
+        (Text("let's ")
+            .fontWeight(.medium)
+            .foregroundStyle(white)
+            + Text("breathe")
+            .fontWeight(.light)
+            .foregroundStyle(aqua))
+            .font(.system(size: size, design: .rounded))
+            .accessibilityLabel("Let's Breathe")
     }
 }
 
@@ -128,8 +146,6 @@ struct SplashView: View {
     @State private var visible = false
 
     // Colori della scritta, gli stessi del marchio.
-    private let wordmarkWhite = Color(red: 0xF2 / 255, green: 0xF7 / 255, blue: 0xF6 / 255)
-    private let wordmarkAqua = Color(red: 0x8F / 255, green: 0xD6 / 255, blue: 0xD1 / 255)
 
     var body: some View {
         ZStack {
@@ -141,13 +157,7 @@ struct SplashView: View {
                     SplashLogoView(size: 230)
 
                     // Scritta del marchio, ferma sotto il simbolo.
-                    (Text("breathe ")
-                        .fontWeight(.medium)
-                        .foregroundStyle(wordmarkWhite)
-                        + Text("with me")
-                        .fontWeight(.light)
-                        .foregroundStyle(wordmarkAqua))
-                        .font(.system(size: 32, design: .rounded))
+                    BrandWordmark(size: 32)
                 }
                 .opacity(visible ? 1 : 0)
                 .animation(.easeOut(duration: 0.3), value: visible)

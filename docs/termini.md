@@ -1,8 +1,8 @@
-# Termini di servizio – Breathe with me
+# Termini di servizio – Let's Breathe
 
 Ultimo aggiornamento: 12 novembre 2026
 
-Questi termini regolano l'uso dell'app Breathe with me (l'"App"), sviluppata da Matteo Negri (lo "Sviluppatore"). Usando l'App accetti questi termini. Se non li accetti, non usare l'App.
+Questi termini regolano l'uso dell'app Let's Breathe (l'"App"), sviluppata da Matteo Negri (lo "Sviluppatore"). Usando l'App accetti questi termini. Se non li accetti, non usare l'App.
 
 ## 1. Cosa fa l'App
 
@@ -62,11 +62,11 @@ Matteo Negri – silentmat@proton.me
 
 ---
 
-# Terms of Service – Breathe with me
+# Terms of Service – Let's Breathe
 
 Last updated: November 12, 2026
 
-These terms govern your use of the Breathe with me app (the "App"), developed by Matteo Negri (the "Developer"). By using the App you accept these terms. If you do not accept them, do not use the App.
+These terms govern your use of the Let's Breathe app (the "App"), developed by Matteo Negri (the "Developer"). By using the App you accept these terms. If you do not accept them, do not use the App.
 
 ## 1. What the App does
 

@@ -511,7 +511,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BWM-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = BWM;
+				INFOPLIST_KEY_CFBundleDisplayName = "Let's Breathe";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Used to read the heart rate and blood oxygen recorded by Apple Watch during breath-hold sessions.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Used to start a temporary workout on Apple Watch to measure your heart rate. The workout is discarded and never saved to Health.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -548,7 +548,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BWM-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = BWM;
+				INFOPLIST_KEY_CFBundleDisplayName = "Let's Breathe";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Used to read the heart rate and blood oxygen recorded by Apple Watch during breath-hold sessions.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Used to start a temporary workout on Apple Watch to measure your heart rate. The workout is discarded and never saved to Health.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -800,6 +800,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Breathe-with-me-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Let's Breathe";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Used to read the heart rate and blood oxygen recorded by Apple Watch during breath-hold sessions.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Used to start a temporary workout on Apple Watch to measure your heart rate. The workout is discarded and never saved to Health.";
@@ -845,6 +846,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Breathe-with-me-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Let's Breathe";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Used to read the heart rate and blood oxygen recorded by Apple Watch during breath-hold sessions.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Used to start a temporary workout on Apple Watch to measure your heart rate. The workout is discarded and never saved to Health.";
