@@ -28,6 +28,8 @@ final class ApneaEngine: ObservableObject {
     private var sessionStart = Date()
     private var phaseStart = Date()
     private var lastTap = Date.distantPast
+    /// Recupero appena concluso: finisce nel tentativo che parte ora.
+    private var pendingRest: Double?
     private var ticker: Task<Void, Never>?
 
     /// Il tempo da superare: quello del tentativo precedente.
@@ -43,12 +45,16 @@ final class ApneaEngine: ObservableObject {
         switch state {
         case .idle:
             attempts = []
+            pendingRest = nil
             sessionStart = now
             beginHold(at: now)
             startTicker()
         case .holding:
             finishHold(at: now)
         case .resting:
+            // Il recupero tra due tentativi si registra solo quando ne parte uno nuovo:
+            // quello dopo l'ultimo tentativo, fino alla chiusura, resta fuori.
+            pendingRest = now.timeIntervalSince(phaseStart)
             beginHold(at: now)
         }
     }
@@ -66,6 +72,7 @@ final class ApneaEngine: ObservableObject {
         elapsed = 0
         restSeconds = 0
         beatTarget = false
+        pendingRest = nil
         return result
     }
 
@@ -80,7 +87,9 @@ final class ApneaEngine: ObservableObject {
     private func finishHold(at date: Date) {
         let duration = date.timeIntervalSince(phaseStart)
         let beat = target.map { duration > $0 } ?? false
-        attempts.append(ApneaAttempt(start: phaseStart, duration: duration, beatPrevious: beat))
+        attempts.append(ApneaAttempt(start: phaseStart, duration: duration, beatPrevious: beat,
+                                     restBefore: pendingRest))
+        pendingRest = nil
         elapsed = duration
         phaseStart = date
         restSeconds = 0
@@ -308,6 +317,16 @@ struct ApneaScreen: View {
                     .accessibilityElement(children: .ignore)
                     .accessibilityLabel(L("Tentativo \(index + 1): \(attempt.duration.stopwatchString)", "Attempt \(index + 1): \(attempt.duration.stopwatchString)")
                                         + (attempt.beatPrevious ? L(", superato il precedente", ", beat the previous one") : ""))
+
+                    // Recupero che ha preceduto il tentativo (l'elenco va dal più recente).
+                    if let rest = attempt.restBefore {
+                        Label(Int(rest).clockString, systemImage: "pause.fill")
+                            .labelStyle(.titleAndIcon)
+                            .font(.system(.caption, design: .rounded, weight: .medium))
+                            .monospacedDigit()
+                            .foregroundStyle(Theme.cobalt)
+                            .accessibilityLabel(L("Recupero \(Int(rest).clockString)", "Recovery \(Int(rest).clockString)"))
+                    }
                 }
             }
             .padding(.horizontal, 2)

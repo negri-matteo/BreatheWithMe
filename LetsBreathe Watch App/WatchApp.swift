@@ -76,6 +76,7 @@ final class WatchWorkoutManager: NSObject, ObservableObject {
     private var session: HKWorkoutSession?
     private var builder: HKLiveWorkoutBuilder?
     private var isStarting = false
+    private var stopRequested = false
     private var startedAt = Date.distantPast
 
     func activateConnectivity() {
@@ -91,17 +92,22 @@ final class WatchWorkoutManager: NSObject, ObservableObject {
             return
         }
         isStarting = true
+        stopRequested = false
+        // Da qui in poi conta come sessione nuova: uno "stop" più vecchio viene ignorato.
+        startedAt = Date()
         problem = nil
         Task {
             do {
                 let share: Set<HKSampleType> = [HKObjectType.workoutType()]
                 let read: Set<HKObjectType> = [HKQuantityType(.heartRate)]
                 try await healthStore.requestAuthorization(toShare: share, read: read)
-                try begin()
+                // L'iPhone ha chiuso la sessione mentre si attendeva il permesso: non si avvia nulla.
+                if !stopRequested { try begin() }
             } catch {
                 problem = .cannotStart
             }
             isStarting = false
+            stopRequested = false
         }
     }
 
@@ -119,13 +125,13 @@ final class WatchWorkoutManager: NSObject, ObservableObject {
         self.builder = builder
 
         let now = Date()
-        startedAt = now
         session.startActivity(with: now)
         builder.beginCollection(withStart: now) { _, _ in }
         isRunning = true
     }
 
     func stop() {
+        if isStarting { stopRequested = true }
         guard let session, let builder else { return }
         self.session = nil
         self.builder = nil

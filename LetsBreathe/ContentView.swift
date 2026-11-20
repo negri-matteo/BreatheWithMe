@@ -82,7 +82,10 @@ struct ContentView: View {
 
 /// Immagini del marchio nel catalogo Assets dell'app.
 enum BrandAsset: String {
-    case mark = "BrandMark"               // archi, figura e bolle (senza scritta)
+    case logo = "BrandLogo"               // verticale: foto del sub e scritta sotto
+    case mark = "BrandMark"               // foto del sub con i bordi sfumati
+    case horizontal = "BrandHorizontal"   // foto a sinistra, scritta a destra
+    case square = "BrandSquare"           // come l'icona: foto quadrata
 
     var isAvailable: Bool {
         #if canImport(UIKit)
@@ -90,26 +93,6 @@ enum BrandAsset: String {
         #else
         return true
         #endif
-    }
-}
-
-/// Scritta del marchio, "let's" chiaro e "breathe" acqua.
-/// Disegnata come testo: segue il nome dell'app senza bisogno di nuove immagini.
-struct BrandWordmark: View {
-    var size: CGFloat = 32
-
-    private let white = Color(red: 0xF2 / 255, green: 0xF7 / 255, blue: 0xF6 / 255)
-    private let aqua = Color(red: 0x8F / 255, green: 0xD6 / 255, blue: 0xD1 / 255)
-
-    var body: some View {
-        (Text("let's ")
-            .fontWeight(.medium)
-            .foregroundStyle(white)
-            + Text("breathe")
-            .fontWeight(.light)
-            .foregroundStyle(aqua))
-            .font(.system(size: size, design: .rounded))
-            .accessibilityLabel("Let's Breathe")
     }
 }
 
@@ -139,24 +122,21 @@ struct BrandImage: View {
 
 // MARK: - Splash
 
-/// Il logo "risale verso la luce": gli archi della superficie restano fermi e il sub
-/// sale in un secondo fino alla posizione del logo (vedi `SplashLogoView.swift`).
-/// Con "Riduci movimento" attivo il sub compare già nella posizione finale.
+/// Il logo "risale verso la luce": la foto del sub compare in un secondo
+/// con una leggera risalita (vedi `SplashLogoView.swift`).
+/// Con "Riduci movimento" attivo il logo compare già nella posizione finale.
 struct SplashView: View {
     @State private var visible = false
 
-    // Colori della scritta, gli stessi del marchio.
-
     var body: some View {
         ZStack {
-            Theme.brandNavy.ignoresSafeArea()
+            Brand.deepWater.ignoresSafeArea()
 
             VStack(spacing: 26) {
                 VStack(spacing: 18) {
-                    // Simbolo disegnato in codice: è lui ad animare il sub.
                     SplashLogoView(size: 230)
 
-                    // Scritta del marchio, ferma sotto il simbolo.
+                    // Scritta del marchio, ferma sotto la foto.
                     BrandWordmark(size: 32)
                 }
                 .opacity(visible ? 1 : 0)

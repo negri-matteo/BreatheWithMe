@@ -18,6 +18,10 @@ struct ApneaAttempt: Codable, Identifiable, Equatable {
     var start: Date
     var duration: Double          // secondi
     var beatPrevious: Bool        // ha superato il tentativo precedente della stessa sessione
+    /// Recupero prima di questo tentativo, in secondi: nil per il primo della sessione.
+    /// Il riposo dopo l'ultimo tentativo non viene registrato.
+    /// Opzionale: le sessioni salvate prima non lo hanno e si leggono lo stesso.
+    var restBefore: Double? = nil
 }
 
 struct ApneaSession: Codable, Identifiable, Equatable {
@@ -32,6 +36,8 @@ struct ApneaSession: Codable, Identifiable, Equatable {
 extension ApneaSession {
     var bestHold: Double { attempts.map(\.duration).max() ?? 0 }
     var totalHold: Double { attempts.reduce(0) { $0 + $1.duration } }
+    /// Somma dei recuperi tra un tentativo e l'altro.
+    var totalRest: Double { attempts.reduce(0) { $0 + ($1.restBefore ?? 0) } }
 
     var averageHeartRate: Double? {
         guard !heartRate.isEmpty else { return nil }
@@ -154,7 +160,7 @@ enum CSVExporter {
 
         var lines = [
             [L("sessione", "session"), L("tipo", "type"), L("numero", "number"), L("data_ora", "date_time"), L("valore", "value"), L("unita", "unit"),
-             L("superato_precedente", "beat_previous"), L("fc_min", "hr_min"), L("fc_media", "hr_avg"), L("fc_max", "hr_max"), "spo2_min"].joined(separator: separator)
+             L("superato_precedente", "beat_previous"), L("recupero_prima_s", "rest_before_s"), L("fc_min", "hr_min"), L("fc_media", "hr_avg"), L("fc_max", "hr_max"), "spo2_min"].joined(separator: separator)
         ]
 
         for session in sessions.sorted(by: { $0.start < $1.start }) {
@@ -165,6 +171,7 @@ enum CSVExporter {
                 lines.append([
                     label, L("apnea", "breath_hold"), "\(index + 1)", stamp.string(from: attempt.start),
                     number(attempt.duration, 1), "s", attempt.beatPrevious ? L("si", "yes") : "no",
+                    number(attempt.restBefore, 1),
                     number(heart?.min, 0), number(heart?.avg, 0), number(heart?.max, 0),
                     number(session.oxygenMin(for: attempt), 0)
                 ].joined(separator: separator))
@@ -172,13 +179,13 @@ enum CSVExporter {
             for (index, sample) in session.heartRate.enumerated() {
                 lines.append([
                     label, L("battito", "heart_rate"), "\(index + 1)", stamp.string(from: sample.date),
-                    number(sample.value, 0), "bpm", "", "", "", "", ""
+                    number(sample.value, 0), "bpm", "", "", "", "", "", ""
                 ].joined(separator: separator))
             }
             for (index, sample) in session.oxygen.enumerated() {
                 lines.append([
                     label, L("ossigeno", "oxygen"), "\(index + 1)", stamp.string(from: sample.date),
-                    number(sample.value, 0), "%", "", "", "", "", ""
+                    number(sample.value, 0), "%", "", "", "", "", "", ""
                 ].joined(separator: separator))
             }
         }

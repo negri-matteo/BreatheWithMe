@@ -247,8 +247,9 @@ struct AboutScreen: View {
                 Section {
                     VStack(spacing: 10) {
                         HStack(spacing: 12) {
-                            BrandImage(asset: .mark)
-                                .frame(height: 56)
+                            BrandImage(asset: .square)
+                                .frame(width: 60, height: 60)
+                                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                             BrandWordmark(size: 28)
                         }
                         .padding(.bottom, 4)
@@ -340,6 +341,7 @@ struct AboutScreen: View {
                 }
             }
             .scrollContentBackground(.hidden)
+            .fadeAboveTabBar()
             .background(AppBackground())
             .navigationTitle(L("Informazioni", "About"))
             .confirmationDialog(L("Eliminare tutto lo storico?", "Delete all history?"),

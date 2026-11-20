@@ -24,7 +24,6 @@ enum Theme {
     static let cobalt  = Color(hex: 0x4B7BFF)
     static let emerald = Color(hex: 0x10B981)
     static let ink     = Color(hex: 0x04121C)      // testo scuro sopra i colori chiari
-    static let brandNavy = Color(hex: 0x0B2A3F)    // fondo del logo e dell'icona
 
     static let stroke = Color.white.opacity(0.10)
     static let card   = Color.white.opacity(0.06)
@@ -532,6 +531,29 @@ final class SessionEngine: ObservableObject {
 
 // MARK: - Componenti grafici riutilizzabili
 
+/// Nelle pagine che scorrono il contenuto sfuma e sparisce prima della barra delle schede:
+/// sotto la barra non resta testo leggibile. Va messo prima di `.background`,
+/// così lo sfondo resta visibile fino in fondo.
+struct FadeAboveTabBar: ViewModifier {
+    func body(content: Content) -> some View {
+        content.mask {
+            // Il riquadro della maschera si ferma dove inizia la barra (area sicura):
+            // tutto quello che scorre più in basso viene nascosto.
+            // In alto invece la maschera copre anche l'area sicura, dove sta il titolo grande.
+            VStack(spacing: 0) {
+                Color.black
+                LinearGradient(colors: [.black, .clear], startPoint: .top, endPoint: .bottom)
+                    .frame(height: 28)
+            }
+            .ignoresSafeArea(edges: .top)
+        }
+    }
+}
+
+extension View {
+    func fadeAboveTabBar() -> some View { modifier(FadeAboveTabBar()) }
+}
+
 struct AppBackground: View {
     var accent: Color = Theme.mint
 
@@ -874,35 +896,54 @@ struct BreathingScreen: View {
     }
 
     /// Cambio rapido tra timer a un tocco, visibile solo quando la sessione non è attiva.
+    /// Fino a 5 timer stanno tutti in una riga, a larghezza uguale, senza scorrere.
+    /// Con più timer la riga torna a scorrere.
     private var profileChips: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                ForEach(Array(profiles.enumerated()), id: \.element.id) { index, profile in
-                    let isSelected = index == selectedProfileIndex
-                    Button {
-                        withAnimation(.easeInOut(duration: 0.25)) { selectProfile(index) }
-                    } label: {
-                        Text(profile.name)
-                            .font(.system(.subheadline, design: .rounded, weight: .semibold))
-                            .foregroundStyle(isSelected ? Theme.ink : Color.white.opacity(0.85))
-                            .padding(.horizontal, 14)
-                            .padding(.vertical, 8)
-                            .background(
-                                Capsule().fill(isSelected ? AnyShapeStyle(Theme.accentGradient)
-                                                          : AnyShapeStyle(Color.white.opacity(0.08)))
-                            )
-                            .overlay(Capsule().stroke(Theme.stroke, lineWidth: isSelected ? 0 : 1))
+        Group {
+            if profiles.count <= 5 {
+                HStack(spacing: 6) {
+                    ForEach(Array(profiles.enumerated()), id: \.element.id) { index, profile in
+                        profileChip(profile, index: index, fill: true)
                     }
-                    .buttonStyle(PressableStyle())
-                    .accessibilityAddTraits(isSelected ? .isSelected : [])
+                }
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        ForEach(Array(profiles.enumerated()), id: \.element.id) { index, profile in
+                            profileChip(profile, index: index, fill: false)
+                        }
+                    }
+                    .padding(.horizontal, 2)
                 }
             }
-            .padding(.horizontal, 2)
         }
         .frame(height: 38)
         .opacity(engine.isActive ? 0 : 1)
         .allowsHitTesting(!engine.isActive)
         .animation(.easeInOut(duration: 0.25), value: engine.isActive)
+    }
+
+    private func profileChip(_ profile: BreathingProfile, index: Int, fill: Bool) -> some View {
+        let isSelected = index == selectedProfileIndex
+        return Button {
+            withAnimation(.easeInOut(duration: 0.25)) { selectProfile(index) }
+        } label: {
+            Text(profile.name)
+                .font(.system(.subheadline, design: .rounded, weight: .semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .foregroundStyle(isSelected ? Theme.ink : Color.white.opacity(0.85))
+                .padding(.horizontal, fill ? 6 : 14)
+                .padding(.vertical, 8)
+                .frame(maxWidth: fill ? .infinity : nil)
+                .background(
+                    Capsule().fill(isSelected ? AnyShapeStyle(Theme.accentGradient)
+                                              : AnyShapeStyle(Color.white.opacity(0.08)))
+                )
+                .overlay(Capsule().stroke(Theme.stroke, lineWidth: isSelected ? 0 : 1))
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
     private func isCurrentCycle(_ index: Int) -> Bool {
@@ -1377,6 +1418,7 @@ struct ProfilesListView: View {
                 }
                 .padding(.bottom, 24)
             }
+            .fadeAboveTabBar()
         }
         .foregroundStyle(.white)
         .confirmationDialog(

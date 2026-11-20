@@ -83,6 +83,9 @@ final class VitalsMonitor: NSObject, ObservableObject {
         do {
             // Apre (o risveglia) l'app sull'orologio e le consegna la configurazione.
             try await healthStore.startWatchApp(toHandle: configuration)
+            // La sessione è finita mentre l'orologio si avviava: lo "stop" mandato prima
+            // risulterebbe più vecchio dell'avvio e verrebbe ignorato, quindi si ripete.
+            if !isRecording { sendStopToWatch() }
         } catch {
             if isRecording, status != .live { status = .unavailable }
         }
@@ -95,25 +98,27 @@ final class VitalsMonitor: NSObject, ObservableObject {
         status = .idle
         heartRate = nil
 
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            if session.activationState == .activated {
-                let message: [String: Any] = [
-                    WatchLink.command: WatchLink.stop,
-                    WatchLink.timestamp: Date().timeIntervalSince1970,
-                    WatchLink.language: AppLanguage.current.rawValue
-                ]
-                if session.isReachable {
-                    session.sendMessage(message, replyHandler: nil, errorHandler: nil)
-                }
-                // Copia di sicurezza: arriva anche se in questo istante l'orologio non è raggiungibile.
-                try? session.updateApplicationContext(message)
-            }
-        }
+        sendStopToWatch()
 
         let result = samples
         samples = []
         return result
+    }
+
+    private func sendStopToWatch() {
+        guard WCSession.isSupported() else { return }
+        let session = WCSession.default
+        guard session.activationState == .activated else { return }
+        let message: [String: Any] = [
+            WatchLink.command: WatchLink.stop,
+            WatchLink.timestamp: Date().timeIntervalSince1970,
+            WatchLink.language: AppLanguage.current.rawValue
+        ]
+        if session.isReachable {
+            session.sendMessage(message, replyHandler: nil, errorHandler: nil)
+        }
+        // Copia di sicurezza: arriva anche se in questo istante l'orologio non è raggiungibile.
+        try? session.updateApplicationContext(message)
     }
 
     /// Letture di ossigenazione presenti in Salute nell'intervallo indicato (valori in %).

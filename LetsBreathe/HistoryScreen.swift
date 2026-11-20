@@ -254,6 +254,7 @@ struct HistoryScreen: View {
             sessionsSection
         }
         .scrollContentBackground(.hidden)
+        .fadeAboveTabBar()
     }
 
     private var summarySection: some View {
@@ -606,6 +607,7 @@ struct SessionDetailView: View {
                     Grid(alignment: .trailing, horizontalSpacing: 10, verticalSpacing: 10) {
                         GridRow {
                             Text(L("N.", "No."))
+                            Text(L("Recup.", "Rest"))
                             Text(L("Durata", "Duration"))
                             Text(L("FC min", "Min HR"))
                             Text(L("FC med", "Avg HR"))
@@ -619,6 +621,8 @@ struct SessionDetailView: View {
                             let heart = session.heartStats(for: attempt)
                             GridRow {
                                 Text("\(index + 1)")
+                                Text(attempt.restBefore.map { Int($0.rounded()).clockString } ?? "-")
+                                    .foregroundStyle(Theme.cobalt)
                                 Text(attempt.duration.stopwatchString)
                                     .foregroundStyle(attempt.beatPrevious ? Theme.mint : Color.white)
                                 Text(whole(heart?.min))
@@ -631,13 +635,14 @@ struct SessionDetailView: View {
                         }
                     }
                     .frame(maxWidth: .infinity)
-                    Text(L("FC in battiti al minuto. SpO₂: valore minimo in percentuale, letto fino a due minuti dopo il tentativo.", "HR in beats per minute. SpO₂: lowest value in percent, read up to two minutes after the attempt."))
+                    Text(L("Recup.: riposo prima del tentativo. FC in battiti al minuto. SpO₂: valore minimo in percentuale, letto fino a due minuti dopo il tentativo.", "Rest: recovery before the attempt. HR in beats per minute. SpO₂: lowest value in percent, read up to two minutes after the attempt."))
                         .font(.caption)
                         .foregroundStyle(.white.opacity(0.6))
                 }
             }
             .padding()
         }
+        .fadeAboveTabBar()
         .foregroundStyle(.white)
     }
 
