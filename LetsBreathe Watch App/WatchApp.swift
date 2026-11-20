@@ -66,6 +66,17 @@ final class WatchAppDelegate: NSObject, WKApplicationDelegate {
 final class WatchWorkoutManager: NSObject, ObservableObject {
     static let shared = WatchWorkoutManager()
 
+    override init() {
+        super.init()
+        #if DEBUG
+        // Solo per gli screenshot: con l'argomento -demoVitals mostra una rilevazione in corso.
+        if ProcessInfo.processInfo.arguments.contains("-demoVitals") {
+            isRunning = true
+            heartRate = 74
+        }
+        #endif
+    }
+
     @Published private(set) var isRunning = false
     @Published private(set) var heartRate = 0.0
     enum Problem { case healthUnavailable, cannotStart, interrupted }

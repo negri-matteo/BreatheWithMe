@@ -6,10 +6,15 @@ App per iPhone e Apple Watch per esercizi di respirazione guidata e allenamento 
   <img src="docs/Respira.jpg" width="230" alt="Schermata Respira: timer di respirazione pronto a partire">
   <img src="docs/Timer.jpg" width="230" alt="Elenco dei timer di respirazione salvati">
   <img src="docs/Nuovo_Timer.jpg" width="230" alt="Creazione di un nuovo timer con durata delle fasi e modelli rapidi">
-  <img src="docs/Apnea.jpg" width="230" alt="Cronometro di apnea durante un tentativo">
-  <img src="docs/Recupero.jpg" width="230" alt="Recupero tra due tentativi di apnea, con il battito da Apple Watch">
+  <img src="docs/Apnea.jpg" width="230" alt="Cronometro di apnea durante un tentativo, con il tempo da superare e il battito da Apple Watch">
+  <img src="docs/Recupero.jpg" width="230" alt="Recupero tra due tentativi di apnea: il secondo ha superato il primo">
   <img src="docs/Storico.jpg" width="230" alt="Storico delle sessioni di apnea con grafico dei progressi">
-  <img src="docs/Sessione.jpg" width="230" alt="Dettaglio di una sessione con tempi di apnea e battito cardiaco">
+  <img src="docs/Sessione.jpg" width="230" alt="Dettaglio di una sessione con tempi di apnea, battito cardiaco e ossigenazione">
+</p>
+
+<p align="center">
+  <img src="docs/Watch_Attesa.jpg" width="200" alt="App per Apple Watch in attesa che parta l'apnea dall'iPhone">
+  <img src="docs/Watch.jpg" width="200" alt="App per Apple Watch durante la rilevazione del battito, inviato all'iPhone">
 </p>
 
 > [!WARNING]

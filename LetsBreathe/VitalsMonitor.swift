@@ -58,6 +58,13 @@ final class VitalsMonitor: NSObject, ObservableObject {
         samples = []
         heartRate = nil
         isRecording = true
+        #if DEBUG
+        // Solo per gli screenshot: con l'argomento -demoVitals il battito è simulato.
+        if ProcessInfo.processInfo.arguments.contains("-demoVitals") {
+            startDemoVitals()
+            return
+        }
+        #endif
         guard HKHealthStore.isHealthDataAvailable(), WCSession.isSupported() else {
             status = .unavailable
             return
@@ -141,6 +148,21 @@ final class VitalsMonitor: NSObject, ObservableObject {
             store.execute(query)
         }
     }
+
+    #if DEBUG
+    private func startDemoVitals() {
+        status = .connecting
+        Task {
+            var bpm = 72.0
+            try? await Task.sleep(for: .seconds(1))
+            while isRecording {
+                bpm = min(84, max(62, bpm + Double.random(in: -2.5...2.0)))
+                record(bpm: bpm.rounded())
+                try? await Task.sleep(for: .seconds(2))
+            }
+        }
+    }
+    #endif
 
     private func record(bpm: Double) {
         guard isRecording else { return }
